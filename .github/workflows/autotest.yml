@@ -10,11 +10,11 @@ jobs:
     - uses: actions/checkout@v2
     - name: create build directory
       run: |
-        cd .
+        cd ./test/
         mkdir build
     - name: download GoogleTest and build test
       run: |
-        cd build
+        cd ./test/build
         cmake ..
         cmake --build .
     - name: run test
