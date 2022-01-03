@@ -28,6 +28,12 @@ add_subdirectory(${CMAKE_CURRENT_BINARY_DIR}/googletest-src
 
 project(example-test)
 
+target_include_directories(example-test
+    PRIVATE
+    ../
+    )
+    
+
 add_executable(example-test
     sum_test.cpp)
 
