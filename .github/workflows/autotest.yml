@@ -18,4 +18,4 @@ jobs:
         cmake ..
         cmake --build .
     - name: run test
-      run: build/example-test
+      run: ./test/build/example-test
